@@ -1,0 +1,21 @@
+{{!-- <form onsubmit={{action "findColors"}}>
+	<input value="{{url}}" placeholder="URL of an image">
+	<button type="submit">Find colors</button>
+</form> --}}
+
+{{#if model}}
+	<figure style="background-color: {{rgb model.firstObject.rgb}}">
+		<img src="{{url}}" alt="" />
+		<figcaption>{{url}}</figcaption>
+	</figure>
+
+	{{#each model as |color|}}
+		<div class="Color" style="background-color: {{rgb color.rgb}}">
+			<span>{{color.frequency}}</span>
+			<span>{{rgb color.rgb}}</span>
+		</div>
+	{{/each}}
+
+{{else}}
+	<p class="Warning">Please try another URL.</p>
+{{/if}}

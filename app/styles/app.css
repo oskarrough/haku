@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+}
+.Haku {
+	background: hsl(0,0%,90%);
+	font-family: sans-serif;
+}
+header,
+footer {
+	padding-top: 2rem;
+	text-align: center;
+}
+header {
+
+}
+footer {
+	font-size: small;
+	padding-bottom: 1rem;
+}
+footer a {
+	color: #000;
+}
+
+figure {
+	text-align: center;
+	margin: 0;
+	padding: 3rem 2rem;
+}
+figure img {
+	max-height: 70vh;
+}
+img {
+	max-width: 100%;
+}
+figcaption {
+	font-size: x-small;
+}
+small {
+	font-size: small;
+}
+.Warning {
+	color: red;
+}
+.Color {
+	display: flex;
+	justify-content: space-between;
+	font-size: small;
+	padding: 0.5em;
+}
