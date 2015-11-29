@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "npm run build --environment=production; surge dist"
   },
   "repository": "",
   "engines": {
